@@ -6,7 +6,15 @@ public class Circulo_AbrahamBelenDuran extends FiguraGeometrica_AbrahamBelenDura
 	
 	public Circulo_AbrahamBelenDuran(double r, String tipoFigura) {
 		super(tipoFigura);
-		radio = r;
+		
+		if(r >=0 ) {
+			radio = r;
+			
+		}else {
+			radio =r*(-1);
+		}
+		
+	
 	}
 
 	@Override
